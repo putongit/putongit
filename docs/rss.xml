@@ -1,2 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Meekdai.github.io/Gmeek-template</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Meekdai.github.io/Gmeek-template</link></image><lastBuildDate>Thu, 14 Mar 2024 09:17:29 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>请接着之后的安装步骤执行</title><link>https://Meekdai.github.io/Gmeek-template/post/qing-jie-zhao-zhi-hou-de-an-zhuang-bu-zou-zhi-xing.html</link><description>如果你点击了`READM.md`的链接后，看到了这个页面，请继续之后的安装步骤执行。</description><guid isPermaLink="true">https://Meekdai.github.io/Gmeek-template/post/qing-jie-zhao-zhi-hou-de-an-zhuang-bu-zou-zhi-xing.html</guid><pubDate>Thu, 14 Mar 2024 09:15:10 +0000</pubDate></item><item><title>这是Gmeek模板仓库</title><link>https://Meekdai.github.io/Gmeek-template/post/zhe-shi-Gmeek-mo-ban-cang-ku.html</link><description>通过这个模板创建库，可以大大减少部署Gmeek博客的配置步骤。</description><guid isPermaLink="true">https://Meekdai.github.io/Gmeek-template/post/zhe-shi-Gmeek-mo-ban-cang-ku.html</guid><pubDate>Wed, 20 Dec 2023 07:42:24 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://putongit.github.io/putongit</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://putongit.github.io/putongit</link></image><lastBuildDate>Thu, 20 Jun 2024 04:30:25 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>第一篇博客测试</title><link>https://putongit.github.io/putongit/post/di-yi-pian-bo-ke-ce-shi.html</link><description>1. Nacos 作为配置中心步骤 [#](https://pp-tt.github.io/notes/spring/nacos-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/#1-nacos-%e4%bd%9c%e4%b8%ba%e9%85%8d%e7%bd%ae%e4%b8%ad%e5%bf%83%e6%ad%a5%e9%aa%a4)&#13;
+1.1 引入依赖 [#](https://pp-tt.github.io/notes/spring/nacos-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/#11-%e5%bc%95%e5%85%a5%e4%be%9d%e8%b5%96)&#13;
+        &lt;dependency&gt;&#13;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;&#13;
+            &lt;artifactId&gt;spring-cloud-starter-bootstrap&lt;/artifactId&gt;&#13;
+            &lt;version&gt;3.0.0&lt;/version&gt;&#13;
+        &lt;/dependency&gt;&#13;
+1.2 创建一个 bootstrap.properties [#](https://pp-tt.github.io/notes/spring/nacos-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/#12-%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aa-bootstrapproperties)&#13;
+spring.cloud.nacos.config.server-addr=127.0.0.1:8848 # nacos 服务地址&#13;
+spring.application.name=gulimall-coupon  # 应用名&#13;
+1.3 添加配置中心数据集 [#](https://pp-tt.github.io/notes/spring/nacos-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/#13-%e6%b7%bb%e5%8a%a0%e9%85%8d%e7%bd%ae%e4%b8%ad%e5%bf%83%e6%95%b0%e6%8d%ae%e9%9b%86)&#13;
+给配置中心添加一个数据集（Data Id），默认是应用名.properties&#13;
+&#13;
+image-20221106162259996&#13;
+&#13;
+1.4 动态获取配置 [#](https://pp-tt.github.io/notes/spring/nacos-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/#14-%e5%8a%a8%e6%80%81%e8%8e%b7%e5%8f%96%e9%85%8d%e7%bd%ae)&#13;
+@RefreshScope：动态获取并刷新配置&#13;
+&#13;
+@Value('${配置项名}')：获取到配置&#13;
+&#13;
+如果配置中心和当前应用配置文件中都设置了相同的项，优先使用配置中心的配置。</description><guid isPermaLink="true">https://putongit.github.io/putongit/post/di-yi-pian-bo-ke-ce-shi.html</guid><pubDate>Thu, 20 Jun 2024 04:30:00 +0000</pubDate></item></channel></rss>
